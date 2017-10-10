@@ -1,0 +1,141 @@
+.htmlTab1 {
+    width: 100%;
+    table-layout: auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+    color: black;
+}
+.htmlTab1 th:first-child, .htmlTab1 td:first-child {
+    padding-left: 8px;
+}
+
+.htmlTab1 th {
+    background-color: #4CAF50;
+    color: black;
+    /* display: table-row; */
+}
+.htmlTab1 a {
+      color: black !important;
+}
+    
+.htmlTab1 ul, .htmlTab1 ol {
+    padding: 15px;
+}
+    
+.firstImageHtml {	    
+	  background-color: lightgrey;
+	  text-align: center !important;
+	  }
+	  
+.imageHtml{	    
+	  text-align: center !important;
+	  }
+	  
+.htmlTab1 th, .htmlTab1 td {
+    text-align: left;
+    vertical-align:middle;
+}
+	
+.htmlTab1 tr:nth-child(even){background-color:  	#B0E0E6	}
+.htmlTab1 tr:nth-child(odd){background-color: lightgrey}
+
+
+/* Image Magnification */
+
+.htmlImageMag {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.htmlImageMag:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modalImageClass {
+    display: none;  /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modalImage-contentClass {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    /* position: absolute; */
+    /* top: 220px; */
+   
+   /*  max-height: 600px; */
+}
+
+
+/* Add Animation */
+.modalImage-contentClass  {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+
+.closeBtnClass {
+    /*
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    
+    text-align: right;
+     position: absolute;
+    */
+    /* Make the the Close Button re-sized equal to our Modal image - don't forget to postion text align right*/
+  
+    top: 120px;
+    left: 20px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px; 
+   
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+     text-align: right;
+    transition: 0.3s;
+}
+
+.closeBtnClass:hover,
+.closeBtnClass:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 95% Image Width on Smaller Screens */
+@media only screen and (   max-width: 700px){
+	.modalImage-contentClass { width: 95%; }
+	.closeBtnClass {           width: 95%; }
+}
+
+	/* Used by Abu Webside */
+#abuTab4 th, #abuTab4 td {
+    padding: 24px !important;
+}

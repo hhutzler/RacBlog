@@ -1,0 +1,194 @@
+
+.clockWrapper {
+  width: 110px;
+  height: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 2px;
+  /*background-color: #2df;*/
+  background-color:  yellow;
+  margin: 5px 5px 5px 55px;
+    /* clear: both; */
+  float: left
+  }
+
+.clock, .digitalNumber {
+  width: 880px;
+  height: 280px;
+  border-radius: 10px;
+  background: #000;
+  /* margin: -120px 0px 0px -340px; */
+  position: absolute;
+  /* text-align: center; */
+  padding: 2px;
+  color: #2df;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transform-origin: top left;
+}
+
+.digitalNumber {
+  width: 280px;
+  display: inline-block;
+  }
+  
+.clock .off {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  opacity: 0.2;
+}
+
+.clock .fadeout {
+  background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255, 0.8));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255, 0.8));
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 700px;
+  height: 350px;
+}
+
+.clock ul, .digitalNumber ul  {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/*
+
+We need to use !important to overwrite Wordpress CSS directive defined in 
+style.css : line 89 
+
+.entry-content ul li {
+    color: black; 
+    font-size: 12px;     
+    margin-left: 20px; 
+}
+*/
+
+.clock > ul > li, .digitalNumber > ul > li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  top: 30px;  
+  margin: 0px !important;;
+  padding: 0;
+  width: 120px;
+  height: 200px;
+  color: #2df !important;
+}
+
+/*
+.clock ul li.ampm {
+  position: absolute;
+  bottom: 160px;
+  right: 50px;
+  height: 10px;
+    width: 30px;
+}
+
+.clock ul li.ampm.pm {
+  top: 208px;
+}
+*/
+.clock ul li.separator {
+  font-size: 100px !important;
+  height: 150px;
+  width: 30px;
+  position: relative;
+  top: -42px;
+}
+
+.clock ul li.digit5, .clock ul li.digit6 {
+  position: absolute;
+  left: 600px;
+  top: 50px;
+  -webkit-transform: scale(0.8, 0.8);
+  -moz-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+}
+
+.clock ul li.digit6 {
+  left: 720px;
+}
+
+.clock .bar, .digitalNumber .bar{
+  position: absolute;
+  border-radius: 10px;
+  border: 8px solid #2df;
+  background: #2df;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.digitalNumber .barN0 { left: 20px; top: 5px; width: 75px; height: 0px; }
+.digitalNumber .barN1 { left: 5px; top: 20px; width: 0px; height: 70px; }
+.digitalNumber .barN2 { left: 95px; top: 20px; width: 0px; height: 70px; }
+.digitalNumber .barN3 { left: 20px; top: 95px; width: 75px; height: 0px; }
+.digitalNumber .barN4 { left: 5px; top: 110px; width: 0px; height: 70px; }
+.digitalNumber .barN5 { left: 95px; top: 110px; width: 0px; height: 70px; }
+.digitalNumber .barN6 { left: 20px; top: 185px; width: 75px; height: 0px; }
+
+.clock .bar0 { left: 20px; top: 5px; width: 75px; height: 0px; }
+.clock .bar1 { left: 5px; top: 20px; width: 0px; height: 70px; }
+.clock .bar2 { left: 95px; top: 20px; width: 0px; height: 70px; }
+.clock .bar3 { left: 20px; top: 95px; width: 75px; height: 0px; }
+.clock .bar4 { left: 5px; top: 110px; width: 0px; height: 70px; }
+.clock .bar5 { left: 95px; top: 110px; width: 0px; height: 70px; }
+.clock .bar6 { left: 20px; top: 185px; width: 75px; height: 0px; }
+
+.clock .bar.off { opacity: 0.2 }
+.digitalNumber .bar.off { opacity: 0.2 }
+
+.clock1 {
+  transform: scale(0.12, 0.09);
+  transform-origin: top left;
+}
+
+  
+.singleLine {
+  display: inline-block;
+  font-size: 25px;
+  margin: 0px 25px 0px 25px;
+}
+
+.line3 {
+  margin-left: 80px;
+}
+
+.line4 {
+  margin-left: 50px;
+}
+
+.timerDN1{
+  transform: scale(0.2, 0.09);
+  -webkit-transform: scale(0.2, 0.09);
+  -moz-transform: scale(0.2, 0.09);
+  
+  transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -moz--transform-origin: top left;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+  
+.digitalNumber2 {
+  transform: scale(0.1, 0.045);
+  -webkit-transform: scale(0.1, 0.045);
+  -moz-transform: scale(0.1, 0.045);
+  
+  transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -moz--transform-origin: top left;
+  margin-top: 15px;
+  margin-left: 0px;
+
+}
+
+.numberPanel {
+display: block-inline;   
+background-color: grey;
+}
+

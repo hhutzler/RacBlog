@@ -1,0 +1,28 @@
+/*
+
+		iPhone 5 	 :  320 x  568 px
+		Galaxy S5  :  360 x  640 px 
+		iPhone 6:  :  375 x  667 px
+		Nexus 5X   :  412 x  732 px
+		Nexus 6P   :  412 x  732 px
+	  iPhone 6+: :  414 x  736 px
+		
+		iPad       :  768 x 1024 px 
+		iPad Pro   : 1024 x 1366 px 
+		
+		PC         : 1920 x 1080 px
+		
+		Portrait  SmartPhone : < 568 px
+		LandScape SmartPhone : < 768 px 
+		
+		Portrait Tablet      : < 1024 px
+		Landscape Tablet     : < 1366 px
+		
+		Landscape PC         : > 1366 px
+*/
+
+
+/* Digital Clock / Number  Stuff and HMTL table Stuff */
+
+@import url("clock.css");
+@import url("htmlTab01.css");
